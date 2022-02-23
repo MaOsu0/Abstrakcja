@@ -5,4 +5,8 @@ interface Shape {
 
     double calculateArea();
     double calculateParameter();
+
+    default String getData() {
+        return "Pole: " + calculateArea() + ", obwód: " + calculateParameter();
+    }
 }
