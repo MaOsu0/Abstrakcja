@@ -39,16 +39,30 @@ public class ShapeCalculator {
         int shapeType = sc.nextInt();
         sc.nextLine();
         switch (shapeType) {
-            case Shape.CIRCLE -> readCircleData();
-            case Shape.RECTANGLE -> readRectangleData();
-            case Shape.TRIANGLE -> readTriangleData();
+            case Shape.CIRCLE -> {
+                return readCircleData();
+            }
+            case Shape.RECTANGLE -> {
+                return readRectangleData();
+            }
+            case Shape.TRIANGLE -> {
+                return readTriangleData();
+            }
             default -> throw new NoSuchElementException();
         }
-        return createShape();
     }
 
-    public String printText(String text) {
-        return text;
+    public void printText(String text) {
+        System.out.println(text);
+    }
+
+
+
+    public void printOption() {
+        printText("Wybierz figurę, dla której chcesz obliczyć pole i obwód");
+        printText(Shape.CIRCLE + " - koło");
+        printText(Shape.RECTANGLE + " - prostokąt");
+        printText(Shape.TRIANGLE + " - trójkąt");
     }
 
 }
