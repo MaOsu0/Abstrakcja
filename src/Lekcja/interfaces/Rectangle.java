@@ -32,4 +32,15 @@ public class Rectangle implements Shape {
     public double calculateParameter() {
         return 2 * a + 2 * b;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Kwadrat, ");
+        builder.append("bok A: " + a + ", ");
+        builder.append("bok B: " + b + ", ");
+        builder.append("pole: " + calculateArea() + ", ");
+        builder.append("obwód: " + calculateParameter() + ", ");
+        return builder.toString();
+    }
 }

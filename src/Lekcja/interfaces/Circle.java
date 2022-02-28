@@ -22,4 +22,15 @@ public class Circle implements Shape {
     public double calculateParameter() {
         return 2 * Shape.PI * r;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Okrąg, ");
+        builder.append("promień: " + r + ", ");
+        builder.append("pi: " + PI + ", ");
+        builder.append("pole: " + calculateArea() + ", ");
+        builder.append("obwód: " + calculateParameter() + ", ");
+        return builder.toString();
+    }
 }
