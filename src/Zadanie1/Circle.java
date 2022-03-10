@@ -13,11 +13,11 @@ class Circle implements Shape{
 
     @Override
     public double calculateArea() {
-        return 0;
+        return sizeData.getValueOfPi() * R * R;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 0;
+        return 2 * R * sizeData.getValueOfPi();
     }
 }

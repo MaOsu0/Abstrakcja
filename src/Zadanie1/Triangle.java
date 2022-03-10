@@ -20,11 +20,11 @@ class Triangle implements Shape{
 
     @Override
     public double calculateArea() {
-        return 0;
+        return A * HEIGHT / 2;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 0;
+        return A + B + C;
     }
 }

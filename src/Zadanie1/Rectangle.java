@@ -15,11 +15,11 @@ class Rectangle implements Shape {
 
     @Override
     public double calculateArea() {
-        return 0;
+        return A * B;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 0;
+        return 2 * A + 2 * B;
     }
 }

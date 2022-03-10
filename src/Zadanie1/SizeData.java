@@ -5,7 +5,6 @@ enum SizeData {
 
     private final double valueOfPi;
 
-
     SizeData(double valueOfPi) {
         this.valueOfPi = valueOfPi;
     }
